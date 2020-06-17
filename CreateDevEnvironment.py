@@ -1,48 +1,42 @@
 import pyautogui
 
-pyautogui.FAIL_SAFE = True
-pyautogui.PAUSE = 1
+list_of_apps = ['youtube music', 'whatsapp', 'github', 'brave', 'file explorer', 'android studio', 'windows terminal',
+                'microsoft edge']
 
-# ..........................................................................................................
 
-# After automatedesktop.py is clicked, program will run after 3 second delay. ( Just to bring human's focus )
-pyautogui.sleep(1)
+def name_timer(nm):
+    if nm == 'file explorer':
+        pyautogui.hotkey('altleft', 'd')
+        pyautogui.typewrite('E:')
+        pyautogui.press('enter')
+        pyautogui.sleep(2)
 
-# ..........................................................................................................
+    elif nm == 'android studio':
+        pyautogui.sleep(6)
 
-# 1. Create 4 Virtual Desktops.
-for i in range(3):
+    elif nm == 'windows terminal':
+        pyautogui.sleep(2)
+        pyautogui.typewrite('flutter emulator --launch pixel')
+        pyautogui.sleep(2)
+        pyautogui.press('enter')
+        pyautogui.sleep(7)
+
+    else:
+        pyautogui.sleep(2)
+
+
+for name in list_of_apps:
     pyautogui.hotkey('winleft', 'ctrlleft', 'd')
-    pyautogui.sleep(.2)
+    pyautogui.sleep(1)
 
-# ..........................................................................................................
+    pyautogui.press('win')
+    pyautogui.sleep(1)
+    pyautogui.typewrite(name)
 
-# 2. Press enter. Youtube Music will open up. APPS OPENED : 1
-pyautogui.hotkey('winleft', '0')
-pyautogui.sleep(6)
+    pyautogui.sleep(1)
+    pyautogui.press('enter')
 
-# ..........................................................................................................
+    pyautogui.sleep(1)
+    name_timer(name)
 
-# These 4 lines will open Windows Powershell using Keyboard shortcut Win + x + i
-pyautogui.hotkey('winleft', 'ctrlleft', 'left')
-pyautogui.hotkey('winleft', 'x')
-pyautogui.press('i')
-
-# On same virtual desktop, these lines will open Chrome Browser.
-pyautogui.sleep(1)
-pyautogui.hotkey('winleft', '4')
-pyautogui.sleep(2)
-
-# ..........................................................................................................
-
-pyautogui.hotkey('winleft', 'ctrlleft', 'left')
-
-# This will open PyCharm as it is located on 6th position on taskbar, counting from 1( One ) from left to right
-# direction.
-pyautogui.hotkey('winleft', '6')
-pyautogui.sleep(14)
-
-# ..........................................................................................................
-
-# Will bring control to the original laptop
-pyautogui.hotkey('winleft', 'ctrlleft', 'left')
+    # name_timer(name)
