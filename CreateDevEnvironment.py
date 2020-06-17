@@ -1,5 +1,11 @@
 import pyautogui
 
+print('Creating Android Development Environment... [ any errors are handled as exceptions and can are printed in this console')
+pyautogui.sleep(3)
+
+#.........................................................................................................................................................
+
+
 list_of_apps = ['youtube music', 'whatsapp', 'github', 'brave', 'file explorer', 'android studio', 'windows terminal',
                 'microsoft edge']
 
@@ -28,7 +34,12 @@ def name_timer(nm):
         pyautogui.sleep(2)
 
 
+
+#............................................................................................................................................................
+
+
 for name in list_of_apps:
+
     pyautogui.hotkey('winleft', 'ctrlleft', 'd')
     pyautogui.sleep(1)
 
