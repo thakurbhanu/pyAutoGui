@@ -6,8 +6,11 @@ list_of_apps = ['youtube music', 'whatsapp', 'github', 'brave', 'file explorer',
 
 def name_timer(nm):
     if nm == 'file explorer':
+        pyautogui.sleep(.5)
         pyautogui.hotkey('altleft', 'd')
+        pyautogui.sleep(.5)
         pyautogui.typewrite('E:')
+        pyautogui.sleep(.5)
         pyautogui.press('enter')
         pyautogui.sleep(2)
 
@@ -19,7 +22,7 @@ def name_timer(nm):
         pyautogui.typewrite('flutter emulator --launch pixel')
         pyautogui.sleep(2)
         pyautogui.press('enter')
-        pyautogui.sleep(7)
+        pyautogui.sleep(12)
 
     else:
         pyautogui.sleep(2)

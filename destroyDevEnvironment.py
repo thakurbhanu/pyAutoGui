@@ -13,3 +13,15 @@ for i in range(10):
 # ..........................................................................................................
 
 
+
+print('Closing ALL applications EXCEPT this window !... [ may not work xd]')
+
+pyautogui.sleep(2)
+
+for x in range(30):
+    pyautogui.sleep(1)
+    pyautogui.hotkey('alt', 'tab')
+    pyautogui.sleep(1)
+    pyautogui.hotkey('alt', 'f4')
+
+# ..........................................................................................................
