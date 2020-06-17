@@ -6,7 +6,7 @@ pyautogui.sleep(7)
 #.........................................................................................................................................................
 
 
-list_of_apps = ['youtube music', 'whatsapp', 'github', 'brave', 'file explorer', 'android studio', 'windows terminal',
+list_of_apps = ['youtube music', 'whatsapp', 'github', 'mozilla', 'file explorer', 'android studio', 'windows terminal',
                 'microsoft edge']
 
 
