@@ -1,7 +1,7 @@
 import pyautogui
 
 print('Creating Android Development Environment... [ any errors are handled as exceptions and can are printed in this console')
-pyautogui.sleep(3)
+pyautogui.sleep(7)
 
 #.........................................................................................................................................................
 
