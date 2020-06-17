@@ -6,11 +6,11 @@ list_of_apps = ['youtube music', 'whatsapp', 'github', 'brave', 'file explorer',
 
 def name_timer(nm):
     if nm == 'file explorer':
-        pyautogui.sleep(.5)
+        pyautogui.sleep(1)
         pyautogui.hotkey('altleft', 'd')
-        pyautogui.sleep(.5)
+        pyautogui.sleep(1)
         pyautogui.typewrite('E:')
-        pyautogui.sleep(.5)
+        pyautogui.sleep(1)
         pyautogui.press('enter')
         pyautogui.sleep(2)
 
@@ -43,3 +43,10 @@ for name in list_of_apps:
     name_timer(name)
 
     # name_timer(name)
+
+pyautogui.press('win')
+pyautogui.sleep(1)
+pyautogui.typewrite('github')
+
+pyautogui.sleep(1)
+pyautogui.press('enter')
