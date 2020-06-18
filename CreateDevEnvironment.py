@@ -11,6 +11,9 @@ list_of_apps = ['youtube music', 'whatsapp', 'github', 'mozilla', 'file explorer
 
 
 def name_timer(nm):
+
+
+
     if nm == 'file explorer':
         pyautogui.sleep(1)
         pyautogui.hotkey('altleft', 'd')
@@ -19,6 +22,9 @@ def name_timer(nm):
         pyautogui.sleep(1)
         pyautogui.press('enter')
         pyautogui.sleep(2)
+
+    elif nm == 'whatsapp':
+        pyautogui.sleep(3)
 
     elif nm == 'android studio':
         pyautogui.sleep(6)
