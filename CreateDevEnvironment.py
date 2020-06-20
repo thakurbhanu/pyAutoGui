@@ -6,7 +6,7 @@ pyautogui.sleep(7)
 #.........................................................................................................................................................
 
 
-list_of_apps = ['youtube music', 'whatsapp', 'github', 'mozilla', 'file explorer', 'android studio', 'windows terminal',
+list_of_apps = ['youtube music', 'whatsapp', 'github desktop', 'firefox','file explorer', 'android studio', 'windows terminal',
                 'microsoft edge']
 
 
@@ -18,7 +18,7 @@ def name_timer(nm):
         pyautogui.sleep(1)
         pyautogui.hotkey('altleft', 'd')
         pyautogui.sleep(1)
-        pyautogui.typewrite('E:')
+        pyautogui.typewrite('E:\FlutterAcemind')
         pyautogui.sleep(1)
         pyautogui.press('enter')
         pyautogui.sleep(2)
