@@ -18,7 +18,7 @@ def name_timer(nm):
         pyautogui.sleep(1)
         pyautogui.hotkey('altleft', 'd')
         pyautogui.sleep(1)
-        pyautogui.typewrite('E:\FlutterAcemind')
+        pyautogui.typewrite('E:')
         pyautogui.sleep(1)
         pyautogui.press('enter')
         pyautogui.sleep(2)
