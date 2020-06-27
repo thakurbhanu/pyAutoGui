@@ -1,5 +1,5 @@
 import pyautogui
-from UBUNTU import runFunctions
+import runFunctions
 
 print('Creating Android Development Environment...')
 

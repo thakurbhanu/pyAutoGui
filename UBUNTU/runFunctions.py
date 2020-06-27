@@ -1,5 +1,5 @@
 import pyautogui
-from UBUNTU import delaySeconds, winPressFun
+import delaySeconds, winPressFun
 
 
 def forFiles():
