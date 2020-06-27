@@ -14,10 +14,3 @@ def sixSecs():
     pyautogui.sleep(1)
     pyautogui.press('enter')
     pyautogui.sleep(6)
-
-
-def twelveSecs():
-    pyautogui.sleep(1)
-    pyautogui.press('enter')
-    pyautogui.sleep(12)
-
