@@ -1,4 +1,3 @@
-
 import pyautogui
 
 pyautogui.FAIL_SAFE = True
